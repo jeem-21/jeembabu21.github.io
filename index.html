@@ -1,170 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>jeem-21 — Personal Site</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="theme-color" content="#0b1220" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shihab Hossain — মানুষের পাশে</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#07111c;color:#eef4f8}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:5;background:#07111cf2;border-bottom:1px solid #263544;backdrop-filter:blur(12px)}
+.navin{max-width:1100px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:20px}.links{display:flex;gap:18px;font-size:14px}.links a:hover{color:#6ee7b7}
+.hero{min-height:75vh;display:grid;place-items:center;background:radial-gradient(circle at 20% 30%,#183b45,transparent 35%),radial-gradient(circle at 85% 20%,#26305a,transparent 38%),#07111c}
+.hero-in{max-width:1100px;width:100%;padding:70px 22px;display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}.photo{width:300px;height:300px;border-radius:50%;object-fit:cover;border:5px solid #6ee7b7;box-shadow:0 0 50px #0008;margin:auto;background:#111b27}
+.kicker{color:#6ee7b7;font-weight:700}.hero h1{font-size:clamp(38px,6vw,70px);line-height:1.05;margin:10px 0}.hero p{color:#b9c7d2;font-size:18px}.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:#6ee7b7;color:#07111c;font-weight:800;margin:7px 5px 0 0}.btn.alt{background:#1c2a38;color:#fff;border:1px solid #344555}
+section{max-width:1100px;margin:auto;padding:70px 22px}.title{font-size:32px;margin:0 0 10px}.sub{color:#9fb0bd;margin-bottom:28px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#101c29;border:1px solid #263544;border-radius:18px;padding:22px}.card h3{margin-top:0}.card p{color:#afbdc8;line-height:1.65}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery img{width:100%;height:210px;object-fit:cover;border-radius:16px;border:1px solid #263544}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact{display:flex;flex-wrap:wrap;gap:10px}.contact a{background:#162535;padding:12px 16px;border-radius:12px;border:1px solid #2a3d50}
+footer{text-align:center;padding:30px;color:#708291;border-top:1px solid #1d2a37}
+@media(max-width:760px){.links{display:none}.hero-in,.about{grid-template-columns:1fr}.hero{text-align:center}.photo{width:210px;height:210px}.grid,.gallery{grid-template-columns:1fr}.gallery img{height:230px}}
+</style>
 </head>
 <body>
-  <div id="site" class="theme-auto vip-style">
-    <header class="nav">
-      <div class="brand">
-        <img id="navPhoto" src="assets/images/profile.jpg" alt="profile" />
-        <div>
-          <h1 id="navName">Your Name</h1>
-          <p id="navTitle">Professional Title</p>
-        </div>
-      </div>
-      <nav class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<nav class="nav"><div class="navin"><div class="logo" id="navName">Shihab Hossain</div><div class="links"><a href="#home">হোম</a><a href="#work">আমার কাজ</a><a href="#gallery">গ্যালারি</a><a href="#about">আমার সম্পর্কে</a><a href="#contact">যোগাযোগ</a></div></div></nav>
 
-    <main>
-      <section id="home" class="hero glass">
-        <div class="hero-left">
-          <img id="profilePhoto" src="assets/images/profile.jpg" alt="profile photo" class="profile" />
-        </div>
-        <div class="hero-right">
-          <h2 id="homeName">Your Name</h2>
-          <p id="homeTitle">Professional Title</p>
-          <p id="homeBio">Short bio goes here. A few words about what you do.</p>
-          <div class="hero-actions">
-            <button id="aboutBtn" class="btn primary" onclick="document.location='#about'">About Me</button>
-            <button id="contactBtn" class="btn outline" onclick="document.location='#contact'">Contact</button>
-          </div>
-          <div class="social" id="socialLinks"></div>
-        </div>
-      </section>
+<header class="hero" id="home"><div class="hero-in">
+<div><img id="profile" class="photo" src="" alt="Profile photo"></div>
+<div><div class="kicker">মানুষের পাশে • মানুষের জন্য</div><h1 id="heroName">Shihab Hossain</h1><p id="heroText">সামাজিক কাজ, নারী ও শিশু সহায়তা এবং মানুষের প্রয়োজনের সময়ে পাশে থাকার উদ্যোগ।</p><a class="btn" href="#work">আমার কাজ দেখুন</a><a class="btn alt" href="#contact">যোগাযোগ</a></div>
+</div></header>
 
-      <section id="about" class="section glass">
-        <h3>About</h3>
-        <div class="about-grid">
-          <div class="about-left">
-            <img id="aboutPhoto" src="assets/images/profile.jpg" alt="photo" />
-          </div>
-          <div class="about-right">
-            <p id="aboutBio">Full about/bio text.</p>
-            <ul class="info">
-              <li><strong>Location:</strong> <span id="infoLocation">City, Country</span></li>
-              <li><strong>Phone:</strong> <span id="infoPhone">+1234567890</span></li>
-              <li><strong>Email:</strong> <span id="infoEmail">name@example.com</span></li>
-            </ul>
+<section id="work"><h2 class="title">আমি যে কাজগুলো করি</h2><div class="sub">বাস্তব কাজ ও উদ্যোগগুলো এখানে সুন্দরভাবে তুলে ধরা হবে।</div><div class="grid" id="workGrid"></div></section>
 
-            <h4>Skills</h4>
-            <div id="skills" class="chips"></div>
+<section id="gallery"><h2 class="title">কার্যক্রমের গ্যালারি</h2><div class="sub">আমাদের কাজের ছবি ও মুহূর্তগুলো।</div><div class="gallery" id="galleryGrid"></div></section>
 
-            <h4>Education</h4>
-            <div id="education"></div>
+<section id="about"><div class="about"><div><h2 class="title">আমার সম্পর্কে</h2><p id="aboutText" class="sub"></p></div><div class="card"><h3>আমার লক্ষ্য</h3><p id="goalText"></p></div></div></section>
 
-            <h4>Experience</h4>
-            <div id="experience"></div>
-          </div>
-        </div>
-      </section>
+<section id="contact"><h2 class="title">যোগাযোগ</h2><div class="sub">প্রয়োজনে নিচের মাধ্যমে যোগাযোগ করুন।</div><div class="contact" id="contactGrid"></div></section>
+<footer>© <span id="year"></span> <span id="footName">Shihab Hossain</span> • All rights reserved.</footer>
 
-      <section id="projects" class="section">
-        <h3>Projects</h3>
-        <div id="projectsGrid" class="cards"></div>
-      </section>
-
-      <section id="contact" class="section glass">
-        <h3>Contact</h3>
-        <p>Use the social buttons or email me at <span id="contactEmail">name@example.com</span></p>
-        <div id="contactSocial" class="social"></div>
-      </section>
-    </main>
-
-    <footer class="footer glass">
-      <small>&copy; <span id="footerName">Your Name</span></small>
-    </footer>
-
-    <!-- Tiny hidden white line trigger (very small) -->
-    <div id="secret-line" title="double-tap"></div>
-
-    <!-- Password modal (hidden) -->
-    <div id="passwordModal" class="modal hidden">
-      <div class="modal-card glass">
-        <h4>Enter password</h4>
-        <input id="passwordInput" type="password" placeholder="Password" />
-        <div class="modal-actions">
-          <button id="pwCancel" class="btn outline">Cancel</button>
-          <button id="pwOk" class="btn primary">OK</button>
-        </div>
-        <p class="note">This is client-side only and not secure.</p>
-      </div>
-    </div>
-
-    <!-- Editor panel -->
-    <div id="editor" class="modal hidden">
-      <div class="editor-card glass">
-        <header class="editor-header">
-          <h3>Edit Site</h3>
-          <div>
-            <label for="themeSelect">Theme:</label>
-            <select id="themeSelect">
-              <option value="vip">VIP</option>
-              <option value="premium">Premium</option>
-              <option value="auto">Auto Mix</option>
-              <option value="dark">Dark</option>
-              <option value="light">Light</option>
-            </select>
-            <button id="closeEditor" class="btn outline">Close</button>
-          </div>
-        </header>
-
-        <div class="editor-body">
-          <section>
-            <h4>Basic</h4>
-            <input id="editName" placeholder="Name" />
-            <input id="editTitle" placeholder="Professional Title" />
-            <textarea id="editBio" rows="3" placeholder="Short bio"></textarea>
-            <input id="editLocation" placeholder="Location" />
-            <input id="editPhone" placeholder="Phone" />
-            <input id="editEmail" placeholder="Email" />
-          </section>
-
-          <section>
-            <h4>Social (full URLs)</h4>
-            <input id="editFacebook" placeholder="Facebook URL" />
-            <input id="editInstagram" placeholder="Instagram URL" />
-            <input id="editTikTok" placeholder="TikTok URL" />
-            <input id="editYouTube" placeholder="YouTube URL" />
-            <input id="editWhatsApp" placeholder="WhatsApp URL" />
-            <input id="editTelegram" placeholder="Telegram URL" />
-          </section>
-
-          <section>
-            <h4>Skills</h4>
-            <input id="editSkills" placeholder="Comma separated skills" />
-            <h4>Education (one per line)</h4>
-            <textarea id="editEducation" rows="3" placeholder="School - Degree - Year"></textarea>
-            <h4>Experience (one per line)</h4>
-            <textarea id="editExperience" rows="3" placeholder="Company - Role - Dates"></textarea>
-          </section>
-
-          <section>
-            <h4>Projects</h4>
-            <p>Simple: one project per line in format: Title | Description | ImageURL | DemoURL | GitHubURL</p>
-            <textarea id="editProjects" rows="4" placeholder="Project title | description | image | demo | github"></textarea>
-          </section>
-        </div>
-
-        <footer class="editor-footer">
-          <button id="exportJSON" class="btn outline">Export JSON</button>
-          <input id="importFile" type="file" accept="application/json" />
-          <button id="saveBtn" class="btn primary">Save</button>
-          <button id="resetBtn" class="btn outline">Reset</button>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <script src="assets/js/app.js" defer></script>
-</body>
-            </html>
+<script>
+const defaultData={
+ name:"Shihab Hossain",
+ hero:"সামাজিক কাজ, নারী ও শিশু সহায়তা এবং মানুষের প্রয়োজনের সময়ে পাশে থাকার উদ্যোগ।",
+ about:"আমি মানুষের পাশে দাঁড়াতে এবং প্রয়োজনের সময়ে সহযোগিতা করতে কাজ করি। আমার কাজের উদ্দেশ্য হলো বাস্তব সমস্যায় যতটা সম্ভব সহায়তা করা এবং সচেতনতা তৈরি করা।",
+ goal:"মানুষের উপকারে আসে—এমন কাজকে আরও সুন্দরভাবে এগিয়ে নেওয়া।",
+ works:[
+ {title:"নারী সহায়তা",text:"নারীদের প্রয়োজনীয় সহায়তা, সচেতনতা ও পাশে থাকার উদ্যোগ।"},
+ {title:"শিশু সহায়তা",text:"শিশুদের নিরাপত্তা, অধিকার ও প্রয়োজনীয় সহযোগিতার বিষয়ে কাজ।"},
+ {title:"সামাজিক উদ্যোগ",text:"অসহায় ও প্রয়োজনের মানুষদের পাশে দাঁড়ানোর বিভিন্ন উদ্যোগ।"}
+ ],
+ gallery:[],
+ contacts:[
+ {name:"Facebook",url:"#"},
+ {name:"WhatsApp",url:"#"},
+ {name:"TikTok",url:"#"},
+ {name:"Email",url:"mailto:"}
+ ],
+ profile:""
+};
+function data(){try{return JSON.parse(localStorage.getItem("shihabSite"))||defaultData}catch(e){return defaultData}}
+function render(){
+ const d=data(); document.getElementById("navName").textContent=d.name;document.getElementById("heroName").textContent=d.name;
+ document.getElementById("heroText").textContent=d.hero;document.getElementById("aboutText").textContent=d.about;document.getElementById("goalText").textContent=d.goal;document.getElementById("footName").textContent=d.name;document.getElementById("year").textContent=new Date().getFullYear();
+ document.getElementById("profile").src=d.profile||"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23152230'/%3E%3Ctext x='50%25' y='53%25' text-anchor='middle' fill='%236ee7b7' font-size='28'%3EYOUR PHOTO%3C/text%3E%3C/svg%3E";
+ document.getElementById("workGrid").innerHTML=d.works.map(x=>`<article class="card"><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`).join("");
+ document.getElementById("galleryGrid").innerHTML=d.gallery.length?d.gallery.map(x=>`<img src="${x}" alt="কার্যক্রমের ছবি">`).join(""):"<div class='card' style='grid-column:1/-1'><h3>গ্যালারি প্রস্তুত হচ্ছে</h3><p>Admin থেকে ছবি যোগ করলেই এখানে দেখা যাবে।</p></div>";
+ document.getElementById("contactGrid").innerHTML=d.contacts.map(x=>`<a href="${x.url}" target="_blank">${esc(x.name)}</a>`).join("");
+}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+render();
+</script>
+</body></html>
